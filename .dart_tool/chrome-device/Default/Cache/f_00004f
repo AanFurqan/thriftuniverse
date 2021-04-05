@@ -1,0 +1,409 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/thriftshop/constants.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/painting/placeholder_span.dart', 'packages/thriftshop/models/product.dart'], (function load__packages__thriftshop__screens__details__components__product_title_with_image_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter__src__painting__strut_style$46dart, packages__thriftshop__constants$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__painting__placeholder_span$46dart, packages__thriftshop__models__product$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const heroes = packages__flutter__src__widgets__widget_span$46dart.src__widgets__heroes;
+  const image = packages__flutter__src__widgets__widget_span$46dart.src__widgets__image;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const constants = packages__thriftshop__constants$46dart.constants;
+  const theme = packages__flutter__src__material__icon_button$46dart.src__material__theme;
+  const text_span = packages__flutter__src__painting__placeholder_span$46dart.src__painting__text_span;
+  const inline_span = packages__flutter__src__painting__placeholder_span$46dart.src__painting__inline_span;
+  const product = packages__thriftshop__models__product$46dart.models__product;
+  var product_title_with_image = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    InlineSpanL: () => (T.InlineSpanL = dart.constFn(dart.legacy(inline_span.InlineSpan)))(),
+    JSArrayOfInlineSpanL: () => (T.JSArrayOfInlineSpanL = dart.constFn(_interceptors.JSArray$(T.InlineSpanL())))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 0,
+        [EdgeInsets_right]: 20,
+        [EdgeInsets_top]: 0,
+        [EdgeInsets_left]: 20
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 13,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 13,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C2() {
+      return C[2] = dart.constList([C[3] || CT.C3, C[4] || CT.C4], T._LocationL());
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[2] || CT.C2,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 21,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/details/components/product_title_with_image.dart"
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 21,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 13,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.constList([C[7] || CT.C7, C[8] || CT.C8], T._LocationL());
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[6] || CT.C6,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 25,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/details/components/product_title_with_image.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 20,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11], T._LocationL());
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 32,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/details/components/product_title_with_image.dart"
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "text",
+        [_Location_column]: 17,
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.constList([C[14] || CT.C14], T._LocationL());
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 35,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/details/components/product_title_with_image.dart"
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 24,
+        [_Location_line]: 47,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.constList([C[17] || CT.C17], T._LocationL());
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[16] || CT.C16,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 47,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/details/components/product_title_with_image.dart"
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "name",
+        [_Location_column]: 29,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.constList([C[20] || CT.C20], T._LocationL());
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 32,
+        [_Location_line]: 51,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/details/components/product_title_with_image.dart"
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "tag",
+        [_Location_column]: 19,
+        [_Location_line]: 50,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.constList([C[23] || CT.C23, C[24] || CT.C24], T._LocationL());
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[22] || CT.C22,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 49,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/details/components/product_title_with_image.dart"
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 49,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.constList([C[27] || CT.C27], T._LocationL());
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[26] || CT.C26,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 48,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/details/components/product_title_with_image.dart"
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.constList([C[30] || CT.C30], T._LocationL());
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[29] || CT.C29,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 33,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/details/components/product_title_with_image.dart"
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 9,
+        [_Location_line]: 19,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.constList([C[33] || CT.C33, C[34] || CT.C34], T._LocationL());
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[32] || CT.C32,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 18,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/details/components/product_title_with_image.dart"
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 7,
+        [_Location_line]: 17,
+        [_Location_file]: null
+      });
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 18,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.constList([C[37] || CT.C37, C[38] || CT.C38], T._LocationL());
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[36] || CT.C36,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 16,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/details/components/product_title_with_image.dart"
+      });
+    }
+  }, false);
+  var C = Array(39).fill(void 0);
+  var I = ["package:thriftshop/screens/details/components/product_title_with_image.dart"];
+  var product$ = dart.privateName(product_title_with_image, "ProductTitleWithImage.product");
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  product_title_with_image.ProductTitleWithImage = class ProductTitleWithImage extends framework.StatelessWidget {
+    get product() {
+      return this[product$];
+    }
+    set product(value) {
+      super.product = value;
+    }
+    build(context) {
+      return new basic.Padding.new({padding: C[0] || CT.C0, child: new basic.Column.new({crossAxisAlignment: flex.CrossAxisAlignment.start, children: T.JSArrayOfWidgetL().of([new text.Text.new("Oversized Crewneck", {style: new text_style.TextStyle.new({color: constants.kPrimaryColor}), $creationLocationd_0dea112b090073317d4: C[1] || CT.C1}), new text.Text.new(this.product.title, {style: theme.Theme.of(context).textTheme.headline4.copyWith({color: constants.kPrimaryColor, fontWeight: ui.FontWeight.bold}), $creationLocationd_0dea112b090073317d4: C[5] || CT.C5}), new basic.SizedBox.new({height: 20, $creationLocationd_0dea112b090073317d4: C[9] || CT.C9}), new basic.Row.new({children: T.JSArrayOfWidgetL().of([new basic.RichText.new({text: new text_span.TextSpan.new({children: T.JSArrayOfInlineSpanL().of([new text_span.TextSpan.new({text: "Price\n", style: new text_style.TextStyle.new({color: constants.kPrimaryColor})}), new text_span.TextSpan.new({text: "IDR" + dart.str(this.product.price), style: theme.Theme.of(context).textTheme.headline4.copyWith({color: constants.kPrimaryColor, fontWeight: ui.FontWeight.bold})})])}), $creationLocationd_0dea112b090073317d4: C[12] || CT.C12}), new basic.SizedBox.new({width: 20, $creationLocationd_0dea112b090073317d4: C[15] || CT.C15}), new basic.Expanded.new({child: new heroes.Hero.new({tag: dart.str(this.product.id), child: new image.Image.asset(this.product.image, {$creationLocationd_0dea112b090073317d4: C[18] || CT.C18}), $creationLocationd_0dea112b090073317d4: C[21] || CT.C21}), $creationLocationd_0dea112b090073317d4: C[25] || CT.C25})]), $creationLocationd_0dea112b090073317d4: C[28] || CT.C28})]), $creationLocationd_0dea112b090073317d4: C[31] || CT.C31}), $creationLocationd_0dea112b090073317d4: C[35] || CT.C35});
+    }
+  };
+  (product_title_with_image.ProductTitleWithImage.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let product = opts && 'product' in opts ? opts.product : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[product$] = product;
+    product_title_with_image.ProductTitleWithImage.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = product_title_with_image.ProductTitleWithImage.prototype;
+  dart.addTypeTests(product_title_with_image.ProductTitleWithImage);
+  dart.addTypeCaches(product_title_with_image.ProductTitleWithImage);
+  dart.setMethodSignature(product_title_with_image.ProductTitleWithImage, () => ({
+    __proto__: dart.getMethods(product_title_with_image.ProductTitleWithImage.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(product_title_with_image.ProductTitleWithImage, I[0]);
+  dart.setFieldSignature(product_title_with_image.ProductTitleWithImage, () => ({
+    __proto__: dart.getFields(product_title_with_image.ProductTitleWithImage.__proto__),
+    product: dart.finalFieldType(dart.legacy(product.Product))
+  }));
+  dart.trackLibraries("packages/thriftshop/screens/details/components/product_title_with_image.dart", {
+    "package:thriftshop/screens/details/components/product_title_with_image.dart": product_title_with_image
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["product_title_with_image.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAWgB;;;;;;UAGY;AACxB,YAAO,uDAEE,0CACkC,yCACrB,yBAChB,kBACE,8BACO,qCAAiB,oFAE1B,kBACE,AAAQ,4BACK,AACR,AACA,AACA,eAHW,OAAO,uCAGF,qCAAsC,+EAE7D,6FACA,6BACoB,yBAChB,8BACQ,sCACM,6BACR,kCAAe,kBAAkB,qCAAiB,6BAClD,kCACQ,AAAwB,iBAAf,AAAQ,4BACV,AAAY,AAAU,AAAU,eAA7B,OAAO,uCACZ,qCAAsC,uFAKzD,8FACA,+BACS,0BACe,SAAZ,AAAQ,yBACH,sBACX,AAAQ;IAS1B;;;QArDM;QACW;;;AACZ,kFAAW,GAAG;;EAAC","file":"../../../../../../../../packages/thriftshop/screens/details/components/product_title_with_image.dart.lib.js"}');
+  // Exports:
+  return {
+    screens__details__components__product_title_with_image: product_title_with_image
+  };
+}));
+
+//# sourceMappingURL=product_title_with_image.dart.lib.js.map

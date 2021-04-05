@@ -1,0 +1,638 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/widgets/form.dart', 'packages/thriftshop/size_config.dart', 'packages/thriftshop/components/form_error.dart', 'packages/thriftshop/components/default_button.dart', 'packages/thriftshop/screens/complete_profile/complete_profile_screen.dart', 'packages/flutter/src/material/text_form_field.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/thriftshop/components/custom_surfix_icon.dart', 'packages/flutter/src/services/text_input.dart', 'packages/thriftshop/constants.dart'], (function load__packages__thriftshop__screens__sign_up__components__sign_up_form_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__widgets__form$46dart, packages__thriftshop__size_config$46dart, packages__thriftshop__components__form_error$46dart, packages__thriftshop__components__default_button$46dart, packages__thriftshop__screens__complete_profile__complete_profile_screen$46dart, packages__flutter__src__material__text_form_field$46dart, packages__flutter__src__material__icon_button$46dart, packages__thriftshop__components__custom_surfix_icon$46dart, packages__flutter__src__services__text_input$46dart, packages__thriftshop__constants$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const form = packages__flutter__src__widgets__form$46dart.src__widgets__form;
+  const size_config = packages__thriftshop__size_config$46dart.size_config;
+  const form_error = packages__thriftshop__components__form_error$46dart.components__form_error;
+  const default_button = packages__thriftshop__components__default_button$46dart.components__default_button;
+  const complete_profile_screen = packages__thriftshop__screens__complete_profile__complete_profile_screen$46dart.screens__complete_profile__complete_profile_screen;
+  const text_form_field = packages__flutter__src__material__text_form_field$46dart.src__material__text_form_field;
+  const input_decorator = packages__flutter__src__material__icon_button$46dart.src__material__input_decorator;
+  const custom_surfix_icon = packages__thriftshop__components__custom_surfix_icon$46dart.components__custom_surfix_icon;
+  const text_input = packages__flutter__src__services__text_input$46dart.src__services__text_input;
+  const constants = packages__thriftshop__constants$46dart.constants;
+  var sign_up_form = Object.create(dart.library);
+  var $contains = dartx.contains;
+  var $add = dartx.add;
+  var $remove = dartx.remove;
+  var $isNotEmpty = dartx.isNotEmpty;
+  var $isEmpty = dartx.isEmpty;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    FormStateL: () => (T.FormStateL = dart.constFn(dart.legacy(form.FormState)))(),
+    GlobalKeyOfFormStateL: () => (T.GlobalKeyOfFormStateL = dart.constFn(framework.GlobalKey$(T.FormStateL())))(),
+    StringL: () => (T.StringL = dart.constFn(dart.legacy(core.String)))(),
+    JSArrayOfStringL: () => (T.JSArrayOfStringL = dart.constFn(_interceptors.JSArray$(T.StringL())))(),
+    VoidToNull: () => (T.VoidToNull = dart.constFn(dart.fnType(core.Null, [])))(),
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    ObjectL: () => (T.ObjectL = dart.constFn(dart.legacy(core.Object)))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))(),
+    StringLToStringL: () => (T.StringLToStringL = dart.constFn(dart.fnType(T.StringL(), [T.StringL()])))(),
+    StringLToNull: () => (T.StringLToNull = dart.constFn(dart.fnType(core.Null, [T.StringL()])))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 20,
+        [_Location_line]: 44,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 44,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/sign_up/components/sign_up_form.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 20,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5], T._LocationL());
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 46,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/sign_up/components/sign_up_form.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "errors",
+        [_Location_column]: 21,
+        [_Location_line]: 48,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8], T._LocationL());
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 48,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/sign_up/components/sign_up_form.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 20,
+        [_Location_line]: 49,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11], T._LocationL());
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 49,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/sign_up/components/sign_up_form.dart"
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "text",
+        [_Location_column]: 13,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "press",
+        [_Location_column]: 13,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.constList([C[14] || CT.C14, C[15] || CT.C15], T._LocationL());
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 50,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/sign_up/components/sign_up_form.dart"
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.constList([C[18] || CT.C18], T._LocationL());
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[17] || CT.C17,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 41,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/sign_up/components/sign_up_form.dart"
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "key",
+        [_Location_column]: 7,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.constList([C[21] || CT.C21, C[22] || CT.C22], T._LocationL());
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/sign_up/components/sign_up_form.dart"
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "svgIcon",
+        [_Location_column]: 39,
+        [_Location_line]: 92,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.constList([C[25] || CT.C25], T._LocationL());
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[24] || CT.C24,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 92,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/sign_up/components/sign_up_form.dart"
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "obscureText",
+        [_Location_column]: 7,
+        [_Location_line]: 66,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onSaved",
+        [_Location_column]: 7,
+        [_Location_line]: 67,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onChanged",
+        [_Location_column]: 7,
+        [_Location_line]: 68,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "validator",
+        [_Location_column]: 7,
+        [_Location_line]: 76,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 7,
+        [_Location_line]: 86,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.constList([C[28] || CT.C28, C[29] || CT.C29, C[30] || CT.C30, C[31] || CT.C31, C[32] || CT.C32], T._LocationL());
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[27] || CT.C27,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 65,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/sign_up/components/sign_up_form.dart"
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "svgIcon",
+        [_Location_column]: 39,
+        [_Location_line]: 125,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.constList([C[35] || CT.C35], T._LocationL());
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[34] || CT.C34,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 125,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/sign_up/components/sign_up_form.dart"
+      });
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "obscureText",
+        [_Location_column]: 7,
+        [_Location_line]: 99,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onSaved",
+        [_Location_column]: 7,
+        [_Location_line]: 100,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onChanged",
+        [_Location_column]: 7,
+        [_Location_line]: 101,
+        [_Location_file]: null
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "validator",
+        [_Location_column]: 7,
+        [_Location_line]: 109,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 7,
+        [_Location_line]: 119,
+        [_Location_file]: null
+      });
+    },
+    get C37() {
+      return C[37] = dart.constList([C[38] || CT.C38, C[39] || CT.C39, C[40] || CT.C40, C[41] || CT.C41, C[42] || CT.C42], T._LocationL());
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[37] || CT.C37,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 98,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/sign_up/components/sign_up_form.dart"
+      });
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "svgIcon",
+        [_Location_column]: 39,
+        [_Location_line]: 158,
+        [_Location_file]: null
+      });
+    },
+    get C44() {
+      return C[44] = dart.constList([C[45] || CT.C45], T._LocationL());
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[44] || CT.C44,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 158,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/sign_up/components/sign_up_form.dart"
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "keyboardType",
+        [_Location_column]: 7,
+        [_Location_line]: 132,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onSaved",
+        [_Location_column]: 7,
+        [_Location_line]: 133,
+        [_Location_file]: null
+      });
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onChanged",
+        [_Location_column]: 7,
+        [_Location_line]: 134,
+        [_Location_file]: null
+      });
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "validator",
+        [_Location_column]: 7,
+        [_Location_line]: 142,
+        [_Location_file]: null
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 7,
+        [_Location_line]: 152,
+        [_Location_file]: null
+      });
+    },
+    get C47() {
+      return C[47] = dart.constList([C[48] || CT.C48, C[49] || CT.C49, C[50] || CT.C50, C[51] || CT.C51, C[52] || CT.C52], T._LocationL());
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[47] || CT.C47,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 131,
+        [_Location_file]: "file:///C:/Users/Acer/Documents/thriftshop/lib/screens/sign_up/components/sign_up_form.dart"
+      });
+    }
+  }, false);
+  var C = Array(53).fill(void 0);
+  var I = ["package:thriftshop/screens/sign_up/components/sign_up_form.dart"];
+  sign_up_form.SignUpForm = class SignUpForm extends framework.StatefulWidget {
+    createState() {
+      return new sign_up_form._SignUpFormState.new();
+    }
+  };
+  (sign_up_form.SignUpForm.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    sign_up_form.SignUpForm.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = sign_up_form.SignUpForm.prototype;
+  dart.addTypeTests(sign_up_form.SignUpForm);
+  dart.addTypeCaches(sign_up_form.SignUpForm);
+  dart.setMethodSignature(sign_up_form.SignUpForm, () => ({
+    __proto__: dart.getMethods(sign_up_form.SignUpForm.__proto__),
+    createState: dart.fnType(dart.legacy(sign_up_form._SignUpFormState), [])
+  }));
+  dart.setLibraryUri(sign_up_form.SignUpForm, I[0]);
+  var _formKey = dart.privateName(sign_up_form, "_formKey");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  sign_up_form._SignUpFormState = class _SignUpFormState extends framework.State$(dart.legacy(sign_up_form.SignUpForm)) {
+    addError(opts) {
+      let error = opts && 'error' in opts ? opts.error : null;
+      if (!dart.test(this.errors[$contains](error))) this.setState(dart.fn(() => {
+        this.errors[$add](error);
+      }, T.VoidToNull()));
+    }
+    removeError(opts) {
+      let error = opts && 'error' in opts ? opts.error : null;
+      if (dart.test(this.errors[$contains](error))) this.setState(dart.fn(() => {
+        this.errors[$remove](error);
+      }, T.VoidToNull()));
+    }
+    build(context) {
+      return new form.Form.new({key: this[_formKey], child: new basic.Column.new({children: T.JSArrayOfWidgetL().of([this.buildEmailFormField(), new basic.SizedBox.new({height: size_config.getProportionateScreenHeight(30.0), $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), this.buildPasswordFormField(), new basic.SizedBox.new({height: size_config.getProportionateScreenHeight(30.0), $creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), this.buildConformPassFormField(), new form_error.FormError.new({errors: this.errors, $creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), new basic.SizedBox.new({height: size_config.getProportionateScreenHeight(40.0), $creationLocationd_0dea112b090073317d4: C[9] || CT.C9}), new default_button.DefaultButton.new({text: "Continue", press: dart.fn(() => {
+                if (dart.test(this[_formKey].currentState.validate())) {
+                  navigator.Navigator.pushNamed(T.ObjectL(), context, complete_profile_screen.CompleteProfileScreen.routeName);
+                }
+              }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[12] || CT.C12})]), $creationLocationd_0dea112b090073317d4: C[16] || CT.C16}), $creationLocationd_0dea112b090073317d4: C[19] || CT.C19});
+    }
+    buildConformPassFormField() {
+      return new text_form_field.TextFormField.new({obscureText: true, onSaved: dart.fn(newValue => this.conform_password = newValue, T.StringLToStringL()), onChanged: dart.fn(value => {
+          if (value[$isNotEmpty]) {
+            this.removeError({error: "Please Enter your password"});
+          } else if (value[$isNotEmpty] && this.password == this.conform_password) {
+            this.removeError({error: "Passwords don't match"});
+          }
+          this.conform_password = value;
+        }, T.StringLToNull()), validator: dart.fn(value => {
+          if (value[$isEmpty]) {
+            this.addError({error: "Please Enter your password"});
+            return "";
+          } else if (this.password != value) {
+            this.addError({error: "Passwords don't match"});
+            return "";
+          }
+          return null;
+        }, T.StringLToStringL()), decoration: new input_decorator.InputDecoration.new({labelText: "Confirm Password", hintText: "Re-enter your password", floatingLabelBehavior: input_decorator.FloatingLabelBehavior.always, suffixIcon: new custom_surfix_icon.CustomeSuffixIcon.new({svgIcon: "assets/icons/Lock.svg", $creationLocationd_0dea112b090073317d4: C[23] || CT.C23})}), $creationLocationd_0dea112b090073317d4: C[26] || CT.C26});
+    }
+    buildPasswordFormField() {
+      return new text_form_field.TextFormField.new({obscureText: true, onSaved: dart.fn(newValue => this.password = newValue, T.StringLToStringL()), onChanged: dart.fn(value => {
+          if (value[$isNotEmpty]) {
+            this.removeError({error: "Please Enter your password"});
+          } else if (value.length >= 8) {
+            this.removeError({error: "Password is too short"});
+          }
+          this.password = value;
+        }, T.StringLToNull()), validator: dart.fn(value => {
+          if (value[$isEmpty]) {
+            this.addError({error: "Please Enter your password"});
+            return "";
+          } else if (value.length < 8) {
+            this.addError({error: "Password is too short"});
+            return "";
+          }
+          return null;
+        }, T.StringLToStringL()), decoration: new input_decorator.InputDecoration.new({labelText: "Password", hintText: "Enter your password", floatingLabelBehavior: input_decorator.FloatingLabelBehavior.always, suffixIcon: new custom_surfix_icon.CustomeSuffixIcon.new({svgIcon: "assets/icons/Lock.svg", $creationLocationd_0dea112b090073317d4: C[33] || CT.C33})}), $creationLocationd_0dea112b090073317d4: C[36] || CT.C36});
+    }
+    buildEmailFormField() {
+      return new text_form_field.TextFormField.new({keyboardType: text_input.TextInputType.emailAddress, onSaved: dart.fn(newValue => this.email = newValue, T.StringLToStringL()), onChanged: dart.fn(value => {
+          if (value[$isNotEmpty]) {
+            this.removeError({error: "Please Enter your email"});
+          } else if (dart.test(constants.emailValidatorRegExp.hasMatch(value))) {
+            this.removeError({error: "Please Enter Valid Email"});
+          }
+          return null;
+        }, T.StringLToNull()), validator: dart.fn(value => {
+          if (value[$isEmpty]) {
+            this.addError({error: "Please Enter your email"});
+            return "";
+          } else if (!dart.test(constants.emailValidatorRegExp.hasMatch(value))) {
+            this.addError({error: "Please Enter Valid Email"});
+            return "";
+          }
+          return null;
+        }, T.StringLToStringL()), decoration: new input_decorator.InputDecoration.new({labelText: "Email", hintText: "Enter your email", floatingLabelBehavior: input_decorator.FloatingLabelBehavior.always, suffixIcon: new custom_surfix_icon.CustomeSuffixIcon.new({svgIcon: "assets/icons/Mail.svg", $creationLocationd_0dea112b090073317d4: C[43] || CT.C43})}), $creationLocationd_0dea112b090073317d4: C[46] || CT.C46});
+    }
+  };
+  (sign_up_form._SignUpFormState.new = function() {
+    this[_formKey] = T.GlobalKeyOfFormStateL().new();
+    this.email = null;
+    this.password = null;
+    this.conform_password = null;
+    this.remember = false;
+    this.errors = T.JSArrayOfStringL().of([]);
+    sign_up_form._SignUpFormState.__proto__.new.call(this);
+    ;
+  }).prototype = sign_up_form._SignUpFormState.prototype;
+  dart.addTypeTests(sign_up_form._SignUpFormState);
+  dart.addTypeCaches(sign_up_form._SignUpFormState);
+  dart.setMethodSignature(sign_up_form._SignUpFormState, () => ({
+    __proto__: dart.getMethods(sign_up_form._SignUpFormState.__proto__),
+    addError: dart.fnType(dart.void, [], {error: dart.legacy(core.String)}, {}),
+    removeError: dart.fnType(dart.void, [], {error: dart.legacy(core.String)}, {}),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)]),
+    buildConformPassFormField: dart.fnType(dart.legacy(text_form_field.TextFormField), []),
+    buildPasswordFormField: dart.fnType(dart.legacy(text_form_field.TextFormField), []),
+    buildEmailFormField: dart.fnType(dart.legacy(text_form_field.TextFormField), [])
+  }));
+  dart.setLibraryUri(sign_up_form._SignUpFormState, I[0]);
+  dart.setFieldSignature(sign_up_form._SignUpFormState, () => ({
+    __proto__: dart.getFields(sign_up_form._SignUpFormState.__proto__),
+    [_formKey]: dart.finalFieldType(dart.legacy(framework.GlobalKey$(dart.legacy(form.FormState)))),
+    email: dart.fieldType(dart.legacy(core.String)),
+    password: dart.fieldType(dart.legacy(core.String)),
+    conform_password: dart.fieldType(dart.legacy(core.String)),
+    remember: dart.fieldType(dart.legacy(core.bool)),
+    errors: dart.finalFieldType(dart.legacy(core.List$(dart.legacy(core.String))))
+  }));
+  dart.trackLibraries("packages/thriftshop/screens/sign_up/components/sign_up_form.dart", {
+    "package:thriftshop/screens/sign_up/components/sign_up_form.dart": sign_up_form
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["sign_up_form.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAWoC;IAAkB;;;;;;EACtD;;;;;;;;;;;;;;;;UAUwB;AACpB,qBAAK,AAAO,uBAAS,KAAK,IACxB,AAEE,cAFO;AACU,QAAjB,AAAO,kBAAI,KAAK;;IAEtB;;UAEyB;AACvB,oBAAI,AAAO,uBAAS,KAAK,IACvB,AAEE,cAFO;AACa,QAApB,AAAO,qBAAO,KAAK;;IAEzB;UAG0B;AACxB,YAAO,yBACA,uBACE,gCACK,yBACR,4BACA,gCAAiB,yCAA6B,gEAC9C,+BACA,gCAAiB,yCAA6B,gEAC9C,kCACA,sCAAkB,sEAClB,gCAAiB,yCAA6B,gEAC9C,4CACQ,mBACC;AACL,8BAAI,AAAS,AAAa;AAEqC,kBAAnD,2CAAU,OAAO,EAAwB;;;IAOjE;;AAGE,YAAO,qDACQ,eACJ,QAAC,YAAa,wBAAmB,QAAQ,oCACvC,QAAC;AACV,cAAI,AAAM,KAAD;AAC2B,YAAlC;gBACK,KAAI,AAAM,KAAD,iBAAe,AAAS,iBAAG;AACN,YAAnC;;AAEsB,UAAxB,wBAAmB,KAAK;0CAEf,QAAC;AACV,cAAI,AAAM,KAAD;AACwB,YAA/B;AACA,kBAAO;gBACF,KAAK,AAAS,iBAAG,KAAK;AACK,YAAhC;AACA,kBAAO;;AAET,gBAAO;8CAEG,oDACC,8BACD,iDAGmC,0DACjC,uDAA2B;IAG7C;;AAGE,YAAO,qDACQ,eACJ,QAAC,YAAa,gBAAW,QAAQ,oCAC/B,QAAC;AACV,cAAI,AAAM,KAAD;AAC2B,YAAlC;gBACK,KAAI,AAAM,AAAO,KAAR,WAAW;AACU,YAAnC;;AAEc,UAAhB,gBAAW,KAAK;0CAEP,QAAC;AACV,cAAI,AAAM,KAAD;AACwB,YAA/B;AACA,kBAAO;gBACF,KAAI,AAAM,AAAO,KAAR,UAAU;AACQ,YAAhC;AACA,kBAAO;;AAET,gBAAO;8CAEG,oDACC,sBACD,8CAGmC,0DACjC,uDAA2B;IAG7C;;AAGE,YAAO,sDACuB,gDACnB,QAAC,YAAa,aAAQ,QAAQ,oCAC5B,QAAC;AACV,cAAI,AAAM,KAAD;AAC4B,YAAnC;gBACK,eAAI,AAAqB,wCAAS,KAAK;AACN,YAAtC;;AAEF,gBAAO;0CAEE,QAAC;AACV,cAAI,AAAM,KAAD;AACyB,YAAhC;AACA,kBAAO;gBACF,gBAAK,AAAqB,wCAAS,KAAK;AACV,YAAnC;AACA,kBAAO;;AAET,gBAAO;8CAEG,oDACC,mBACD,2CAGmC,0DACjC,uDAA2B;IAG7C;;;IAjJM,iBAAW;IACV;IACA;IACA;IACF,gBAAW;IACG,cAAS;;;EA6I9B","file":"../../../../../../../../packages/thriftshop/screens/sign_up/components/sign_up_form.dart.lib.js"}');
+  // Exports:
+  return {
+    screens__sign_up__components__sign_up_form: sign_up_form
+  };
+}));
+
+//# sourceMappingURL=sign_up_form.dart.lib.js.map
